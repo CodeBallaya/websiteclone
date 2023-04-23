@@ -1,0 +1,59 @@
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical
+$ mkdir shashank
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical
+$ cd shashank
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank
+$ echo "Yo Whatsapp" >> README.md
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank
+$ cat README.md
+Yo Whatsapp
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank
+$ git init
+Initialized empty Git repository in C:/Users/admin/Desktop/lastpractical/shashank/.git/
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git config --global user.email "sha.bal.rt20@dypatil.edu"
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git config --global user.name "CodeBallaya"
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git commit -m "new"
+[master (root-commit) 83b4542] new
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (master)
+$ git branch -M main
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (main)
+$ git remote add origin https://github.com/CodeBallaya/websiteclone.git
+
+admin@DESKTOP-BKUIK11 MINGW64 ~/Desktop/lastpractical/shashank (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 74.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CodeBallaya/websiteclone.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.

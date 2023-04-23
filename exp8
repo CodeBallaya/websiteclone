@@ -1,0 +1,7 @@
+docker login
+docker pull ubuntu
+docker run -it --name samsung ubuntu
+echo "monitor" > file.txt
+exit
+docker commit samsung username/php:ubuntu
+docker push username/php:ubuntu

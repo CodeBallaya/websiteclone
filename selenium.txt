@@ -1,0 +1,32 @@
+first make a folder 
+create 2 folders demo and browser 
+in browser install chrome driver from https://chromedriver.storage.googleapis.com/index.html?path=113.0.5672.24/
+add it in the browser folder
+next step create Sample1.py
+add this code 
+
+from selenium import webdriver
+import time
+from selenium.webdriver.common.keys import Keys
+print("sample test case started")
+driver = webdriver.Chrome(r'C:/Users/admin/Desktop/selenium test/browser/chromedriver.exe')
+#change the driver to where the browser is present in the folder by extracting it there 
+#driver=webdriver.firefox()
+#driver=webdriver.ie()
+#maximize the window size
+driver.maximize_window()
+#navigate to the url
+driver.get("https://www.youtube.com/")
+#identify the Google search text box and enter the value
+driver.find_element("name", "search_query").send_keys("Ryan Trahan")
+time.sleep(1)
+#click on the Google search button
+driver.find_element("id", "search-icon-legacy").send_keys(Keys.ENTER)
+time.sleep(20)
+#close the browser
+driver.close()
+print("sample test case successfully completed")
+
+for troubleshoot
+pip install selenium 
+pip install -U selenium 

@@ -1,0 +1,18 @@
+Dockerfile:
+FROM php
+COPY ./hello.php ./
+EXPOSE 6969
+CMD ["php","-S","0.0.0.0:3000"]
+
+
+hello.php:
+<html>
+    <?php echo"THIS IS A WEBSITE">
+</html>
+
+
+COMMANDS: 
+docker login
+docker build . -t username/foldername
+docker run --name=php -p=3000:3000
+docker run --name=php -p=6969:6969 username/foldername
